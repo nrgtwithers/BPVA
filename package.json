@@ -1,0 +1,27 @@
+{
+  "name": "bpva",
+  "version": "1.0.0",
+  "description": "Beauty Professional Virtual Assistant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nrgtwithers/BPVA.git"
+  },
+  "keywords": [
+    "MERN",
+    "Redux"
+  ],
+  "author": "Kirthi & Nina W.\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C L. & Nina W.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nrgtwithers/BPVA/issues"
+  },
+  "homepage": "https://github.com/nrgtwithers/BPVA#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
