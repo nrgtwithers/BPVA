@@ -9,10 +9,13 @@ This project is being create to provide Beauty professionals a more efficient wa
 ### Tasks to be completed
 
 - [ ] Figure out Name & Create logos
+- [ ] Figure out overall User Flow
+- [ ] Utilize SEO Marketing
 - [ ] Set up backend for User Auth, client data, and etc
 - [ ] Set up Beauty Professional User page
 - [ ] Set up Client User Page
 - [ ] Set up Salon / Beauty profesional Search
+- [ ] Set up POS capabilities (eHopper)
 - [ ] Deploy to AWS
 
 ### Technologies Utilize
