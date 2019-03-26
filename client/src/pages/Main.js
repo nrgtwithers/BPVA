@@ -18,11 +18,11 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <Form />
+                <h1>Main User Page</h1>
                 
             </div>              
                 )
             }
         };
         
-export default Home;
+ export default Home;

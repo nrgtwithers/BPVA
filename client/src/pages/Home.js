@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Form from '../components/Form'
+// import Form from '../components/Form'
 // import QuizButton from '../components/QuizButton';
 // import SearchBreedsBtn from '../components/SearchBreedsBtn';
 // import NavBar from "../components/NavBar";
@@ -18,7 +18,8 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <Form />
+                <h1>Home</h1>
+                {/* <Form /> */}
                 
             </div>              
                 )
