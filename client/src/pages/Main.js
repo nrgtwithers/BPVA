@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Form from '../components/Form'
+import Tabs from '../components/Tabs'
 // import QuizButton from '../components/QuizButton';
 // import SearchBreedsBtn from '../components/SearchBreedsBtn';
 // import NavBar from "../components/NavBar";
@@ -19,6 +19,7 @@ class Home extends Component {
         return (
             <div>
                 <h1>Main User Page</h1>
+                <Tabs />
                 
             </div>              
                 )
