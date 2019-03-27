@@ -38,7 +38,7 @@ const styles = theme => ({
   avatar: {
     // opacity: '0.7',
     margin: theme.spacing.unit,
-    backgroundColor: '#424242'
+    backgroundColor: '#192231'
   },
   form: {
     width: '100%', // Fix IE 11 issue.
@@ -48,7 +48,7 @@ const styles = theme => ({
   },
   submit: {
     // opacity: '0.9',
-    backgroundColor: '#584f4c',
+    backgroundColor: '#192231',
     marginTop: theme.spacing.unit * 3,
   },
 });
@@ -59,14 +59,14 @@ function SignIn(props) {
   return (
     <main className={classes.main}>
       <CssBaseline />
-      <Paper className={classes.paper}>
+      <Paper className={classes.paper} style={{ background: 'transparent', boxShadow: 'none' }}>
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
           Sign in
         </Typography>
-        <form className={classes.form}>
+        <form className={classes.form} style={{ background: 'transparent', boxShadow: 'none' }}>
           <FormControl margin="normal" required fullWidth>
             <InputLabel htmlFor="email">Email Address</InputLabel>
             <Input id="email" name="email" autoComplete="email" autoFocus />

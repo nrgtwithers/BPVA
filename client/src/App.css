@@ -7,6 +7,12 @@ body{
   font-family: 'Open Sans Condensed', sans-serif !important;
 }
 
+h1{
+  color: white !important;
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  text-transform: uppercase;
+}
+
 h4{
   font-family: 'Open Sans Condensed', sans-serif !important;
   font-size: 20px;
@@ -14,6 +20,7 @@ h4{
 
 button, span.MuiButton-label-104{
   font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
   font-size: 15px !important;
 }
 
