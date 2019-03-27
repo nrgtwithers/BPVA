@@ -5,26 +5,15 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Main from "./pages/Main";
 
-// import Button from '@material-ui/core/Button';
+import Navbar from './components/Navbar';
 
-// class App extends Component {
-//   render() {
-//     return (
-//       <div className="App">
-//         <Button variant="contained" color="primary">
-//           Hello World
-//     </Button>
-//       </div>
-//     );
-//   }
-// }
-// export default App;
 function App() {
 
   return (
    
     <Router>
       <div>
+        <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
