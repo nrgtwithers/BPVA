@@ -1,5 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
 body{
   background-image: linear-gradient(to left,#494E6B , #192231);
   /* object-fit: cover; */
   color: #98878F;
+  font-family: 'Open Sans Condensed', sans-serif !important;
+}
+
+h4{
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  font-size: 20px;
+}
+
+button, span.MuiButton-label-104{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 15px !important;
+}
+
+a{
+  color: white !important;
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  text-decoration: none !important;
 }
