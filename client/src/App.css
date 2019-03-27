@@ -4,6 +4,7 @@ body{
   /* background-size: 100%; */
   background-image: linear-gradient(to left,#494E6B , #192231);
   /* object-fit: cover; */
+  color: #98878F;
 }
 
 /* .App-logo {
