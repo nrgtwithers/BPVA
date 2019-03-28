@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import Tabs from '../components/Tabs'
-// import QuizButton from '../components/QuizButton';
-// import SearchBreedsBtn from '../components/SearchBreedsBtn';
-// import NavBar from "../components/NavBar";
-// import NearMeButton from '../components/GoogleMap';
+import UserCard from '../components/Card';
+
 
 
 class Home extends Component {
@@ -17,8 +15,10 @@ class Home extends Component {
 
     render() {
         return (
-            <div>
-                <h1>Main User Page</h1>
+            <div className="section">
+                <h2>Welcome <strong>*Insert Username*</strong> to BPVA.</h2>
+                <UserCard />
+                <br />
                 <Tabs />
                 
             </div>              

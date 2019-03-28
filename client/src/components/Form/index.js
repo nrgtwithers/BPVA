@@ -16,6 +16,7 @@ import withStyles from '@material-ui/core/styles/withStyles';
 
 const styles = theme => ({
   main: {
+    color: 'white ',
     width: 'auto',
     display: 'block', // Fix IE 11 issue.
     marginLeft: theme.spacing.unit * 3,
@@ -32,6 +33,7 @@ const styles = theme => ({
     flexDirection: 'column',
     alignItems: 'center',
     backgroundColor: '#7b7675 ',
+    color: 'white ',
     // opacity: '0.7',
     padding: `${theme.spacing.unit * 2}px ${theme.spacing.unit * 3}px ${theme.spacing.unit * 3}px`,
   },
@@ -42,7 +44,7 @@ const styles = theme => ({
   },
   form: {
     width: '100%', // Fix IE 11 issue.
-    backgroundColor: '#7b7675 ',
+    color: 'white ',
     // opacity: '0.7',
     marginTop: theme.spacing.unit,
   },

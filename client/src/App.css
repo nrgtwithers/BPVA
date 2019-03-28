@@ -7,10 +7,20 @@ body{
   font-family: 'Open Sans Condensed', sans-serif !important;
 }
 
+strong{
+  color:#985E6D;
+}
+
 h1{
   color: white !important;
   font-family: 'Open Sans Condensed', sans-serif !important;
   text-transform: uppercase;
+}
+
+h2{
+  color: white !important;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif !important;
 }
 
 h4{
@@ -28,4 +38,10 @@ a{
   color: white !important;
   font-family: 'Open Sans Condensed', sans-serif !important;
   text-decoration: none !important;
+}
+
+div.section{
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: auto;
 }
