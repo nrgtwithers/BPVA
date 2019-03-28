@@ -4,9 +4,9 @@ import React, { Component } from 'react';
 // import SearchBreedsBtn from '../components/SearchBreedsBtn';
 // import NavBar from "../components/NavBar";
 // import NearMeButton from '../components/GoogleMap';
-import FAQ from '../components/Collapsable';
+import FAQ from '../components/Collapsible';
 import Video from "../components/Video";
-import { Fab } from '@material-ui/core';
+// import { Fab } from '@material-ui/core';
 
 
 class Home extends Component {
