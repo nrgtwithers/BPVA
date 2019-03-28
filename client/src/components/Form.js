@@ -12,7 +12,6 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import withStyles from '@material-ui/core/styles/withStyles';
-// import './style.css'
 
 const styles = theme => ({
   main: {
@@ -55,7 +54,7 @@ const styles = theme => ({
   },
 });
 
-function SignIn(props) {
+function Form(props) {
   const { classes } = props;
 
   return (
@@ -96,8 +95,8 @@ function SignIn(props) {
   );
 }
 
-SignIn.propTypes = {
+Form.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(SignIn);
+export default withStyles(styles)(Form);
