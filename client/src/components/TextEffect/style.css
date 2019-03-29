@@ -12,6 +12,11 @@
 /*
 ** Apply styles to the parent element
 */
+div.animation{
+  margin: auto;
+  text-align: center;
+}
+
 .Words {
   margin: 0 auto;
   padding: 80px 0;

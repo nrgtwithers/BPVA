@@ -3,7 +3,7 @@ import './style.css';
 
 export default function TextEffect() {
     return (
-        <div>
+        <div className="animation">
             <ul class="Words">
                 <li class="Words-line">
                     <p>&nbsp;</p>

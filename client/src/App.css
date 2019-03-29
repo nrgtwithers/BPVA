@@ -5,6 +5,12 @@ body{
   /* object-fit: cover; */
   color: #98878F;
   font-family: 'Open Sans Condensed', sans-serif !important;
+  font-size:18px;
+}
+
+img{
+    object-fit: cover;
+    border-radius: 200px;
 }
 
 strong{
@@ -23,7 +29,7 @@ h2{
   font-family: 'Open Sans Condensed', sans-serif !important;
 }
 
-h4{
+h4, h6{
   font-family: 'Open Sans Condensed', sans-serif !important;
   font-size: 20px;
 }
@@ -38,10 +44,29 @@ a{
   color: white !important;
   font-family: 'Open Sans Condensed', sans-serif !important;
   text-decoration: none !important;
+  /* font-size: 20px; */
+}
+
+input#name, input#email, input#password{
+  color: white;
+  border-color:white;
+}
+
+a:hover{
+  color: silver;
+  /* font-weight: bold;
+  border-width: 0.5px;
+  border-bottom: solid; */
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+p.signup{
+  text-align: center;
 }
 
 div.section{
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
   margin: auto;
 }
