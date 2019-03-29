@@ -18,7 +18,8 @@ class Home extends Component {
                 {/* <h1 style={{ display: 'flex', justifyContent: 'center', marginBottom: 0 }}>BPVA</h1>
                 <p style={{ display: 'flex', justifyContent: 'center', marginTop: 5 }}>Beauty Professional Virtual Assistant</p> */}
                 {/* <TextEffect /> */}
-                <Video />
+                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 0 }}>
+                    <Video />                </div>
 
                 <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 40, marginTop: 40 }}>
                     <FAQ />
