@@ -57,6 +57,9 @@ const styles = theme => ({
         backgroundColor: '#192231',
         marginTop: theme.spacing.unit * 3,
     },
+    multilineColor: {
+        color: 'white'
+    }
 });
 
 function CreateAccount(props) {
@@ -67,18 +70,26 @@ function CreateAccount(props) {
             <CssBaseline />
             <Paper className={classes.paper} style={{ background: 'transparent', boxShadow: 'none' }}>
                 <Avatar className={classes.avatar}>
-                <Icon>face</Icon>
+                    <Icon>face</Icon>
                 </Avatar>
                 <Typography component="h1" variant="h5">
                     Create your Account
         </Typography>
                 <form className={classes.form} style={{ background: 'transparent', boxShadow: 'none' }}>
                     <FormControl margin="normal" required fullWidth>
-                        <InputLabel htmlFor="name">Name</InputLabel>
+                        <InputLabel htmlFor="name" InputProps={{
+                            classes: {
+                                input: classes.multilineColor
+                            }
+                        }}> Name</InputLabel>
                         <Input id="name" name="name" autoComplete="name" autoFocus />
                     </FormControl>
                     <FormControl margin="normal" required fullWidth>
-                        <InputLabel htmlFor="location">Location</InputLabel>
+                        <InputLabel htmlFor="location" InputProps={{
+                            classes: {
+                                input: classes.multilineColor
+                            }
+                        }}>Location</InputLabel>
                         <Input id="location" name="location" autoComplete="location" autoFocus />
                     </FormControl>
                     <FormControl margin="normal" required fullWidth>
