@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import FAQ from '../components/Collapsible';
 import Video from "../components/Video";
-
+import TextEffect from '../components/TextEffect'
 
 // =======
 // import { Fab } from '@material-ui/core';
