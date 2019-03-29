@@ -2,103 +2,73 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
+import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
+
 const styles = theme => ({
+
   root: {
-    width: '100%',
-     
+    width: '75%',
   },
-  heading: {
-    fontSize: theme.typography.pxToRem(15),
-    flexBasis: '33.33%',
-    flexShrink: 0,
+  ExpPanel: {
+    backgroundImage: 'linear-gradient(to left,#494E6B , #192231)',
+    boxShadow: '1px 1px 10px black'
   },
-  secondaryHeading: {
-    fontSize: theme.typography.pxToRem(15),
-    color: theme.palette.text.secondary,
+  ExpPanelSum: {
+    color: 'white',
   },
+  ExpTitle: {
+    color: 'white',
+    fontSize: '1.2em',
+    textShadow: '3px 3px 5px black'
+  },
+  ExpSubTitle: {
+    color: 'white',
+    borderTop: '1px solid white',
+    paddingTop: 25,
+    // backgroundColor: '#00000020',
+    paddingRight: 10,
+    paddingLeft: 10,
+    paddingBottom: 15,
+    // borderRadius: 5
+  }
+
 });
 
-class ControlledExpansionPanels extends React.Component {
-  state = {
-    expanded: null,
-  };
+function SimpleExpansionPanel(props) {
+  const { classes } = props;
+  return (
+    <div className={classes.root}>
+      <ExpansionPanel className={classes.ExpPanel}>
+        <ExpansionPanelSummary className={classes.ExpPanelSum} expandIcon={<ExpandMoreIcon />}>
+          <Typography className={classes.ExpTitle}>What do we do?</Typography>
+        </ExpansionPanelSummary>
+        <ExpansionPanelDetails>
+          <Typography className={classes.ExpSubTitle}>
+            We provide daily support for stylists and clients looking to organize/schedules appointments and consultations, as well as provide a messaging and point of sales system.
+          </Typography>
+        </ExpansionPanelDetails>
+      </ExpansionPanel>
+      <ExpansionPanel className={classes.ExpPanel}>
+        <ExpansionPanelSummary className={classes.ExpPanelSum} expandIcon={<ExpandMoreIcon />}>
+          <Typography className={classes.ExpTitle}>Our Goals</Typography>
+        </ExpansionPanelSummary>
+        <ExpansionPanelDetails>
+          <Typography className={classes.ExpSubTitle}>
+            To provide multiple services for both stylists and their clients. Allowing for a more personalized customer experience
+          </Typography>
+        </ExpansionPanelDetails>
+      </ExpansionPanel>
 
-  handleChange = panel => (event, expanded) => {
-    this.setState({
-      expanded: expanded ? panel : false,
-    });
-  };
-
-  render() {
-    const { classes } = this.props;
-    const { expanded } = this.state;
-
-    return (
-      <div className={classes.root}>
-      <h1 style={{paddingLeft: 30}}>FAQ</h1>
-        <ExpansionPanel expanded={expanded === 'panel1'} onChange={this.handleChange('panel1')}>
-          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>General settings</Typography>
-            <Typography className={classes.secondaryHeading}>I am an expansion panel</Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
-            <Typography>
-              Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget
-              maximus est, id dignissim quam.
-            </Typography>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
-        <ExpansionPanel expanded={expanded === 'panel2'} onChange={this.handleChange('panel2')}>
-          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>Users</Typography>
-            <Typography className={classes.secondaryHeading}>
-              You are currently not an owner
-            </Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
-            <Typography>
-              Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus, varius pulvinar
-              diam eros in elit. Pellentesque convallis laoreet laoreet.
-            </Typography>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
-        <ExpansionPanel expanded={expanded === 'panel3'} onChange={this.handleChange('panel3')}>
-          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>Advanced settings</Typography>
-            <Typography className={classes.secondaryHeading}>
-              Filtering has been entirely disabled for whole web server
-            </Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
-            <Typography>
-              Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas
-              eros, vitae egestas augue. Duis vel est augue.
-            </Typography>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
-        <ExpansionPanel expanded={expanded === 'panel4'} onChange={this.handleChange('panel4')}>
-          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>Personal data</Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
-            <Typography>
-              Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas
-              eros, vitae egestas augue. Duis vel est augue.
-            </Typography>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
-      </div>
-    );
-  }
+    </div>
+  );
 }
 
-ControlledExpansionPanels.propTypes = {
-  classes: PropTypes.object.isRequired,
+SimpleExpansionPanel.propTypes = {
+  classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(ControlledExpansionPanels);
+export default withStyles(styles)(SimpleExpansionPanel);
