@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-// import Form from '../components/Form'
-// import QuizButton from '../components/QuizButton';
-// import SearchBreedsBtn from '../components/SearchBreedsBtn';
-// import NavBar from "../components/NavBar";
-// import NearMeButton from '../components/GoogleMap';
-import FAQ from '../components/Collapsable';
+import FAQ from '../components/Collapsible';
 import Video from "../components/Video";
-import { Fab } from '@material-ui/core';
-import TextEffect from '../components/TextEffect';
+
+
+// =======
+// import { Fab } from '@material-ui/core';
+// >>>>>>> 74d253887c352881558586733ed8934a3e8e3aee
 
 
 class Home extends Component {
