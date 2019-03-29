@@ -5,13 +5,15 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 // import Client from '@material-ui/icons/Account';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import PersonPinIcon from '@material-ui/icons/PersonPin';
-import HelpIcon from '@material-ui/icons/Help';
-import ShoppingBasket from '@material-ui/icons/ShoppingBasket';
+// import FavoriteIcon from '@material-ui/icons/Favorite';
+// import PersonPinIcon from '@material-ui/icons/PersonPin';
+// import HelpIcon from '@material-ui/icons/Help';
+// import ShoppingBasket from '@material-ui/icons/ShoppingBasket';
 // import ThumbDown from '@material-ui/icons/ThumbDown';
-// import ThumbUp from '@material-ui/icons/ThumbUp';
+import ThumbUp from '@material-ui/icons/ThumbUp';
 import Typography from '@material-ui/core/Typography';
+import Icon from '@material-ui/core/Icon';
+
 
 function TabContainer(props) {
   return (
@@ -30,7 +32,8 @@ const styles = theme => ({
     flexGrow: 1,
     width: '100%',
     backgroundColor: theme.palette.background.paper,
-  },
+    borderRadius: '20px',
+    },
 });
 
 class ScrollableTabsButtonForce extends React.Component {
@@ -48,7 +51,7 @@ class ScrollableTabsButtonForce extends React.Component {
 
     return (
       <div className={classes.root}>
-        <AppBar position="static" color="default">
+        <AppBar position="static" style={{ background: 'transparent', boxShadow: 'yes', }}>
           <Tabs
             value={value}
             onChange={this.handleChange}
@@ -57,13 +60,12 @@ class ScrollableTabsButtonForce extends React.Component {
             indicatorColor="primary"
             textColor="primary"
           >
-            {/* <Tab label="Client Information" icon={<Account />} /> */}
-            <Tab label="Calendar" icon={<FavoriteIcon />} />
-            <Tab label="Messages" icon={<PersonPinIcon />} />
-            <Tab label="Consultation Form" icon={<HelpIcon />} />
-            <Tab label="Point of Sale" icon={<ShoppingBasket />} />
-            {/* <Tab label="Item Six" icon={<ThumbDown />} />
-            <Tab label="Item Seven" icon={<ThumbUp />} /> */}
+            <Tab label="Client Information" icon={<Icon>face</Icon>} />
+            <Tab label="Calendar" icon={<Icon>calendar_today</Icon>} />
+            <Tab label="Messages" icon={<Icon>message</Icon>} />
+            <Tab label="Consultation Form" icon={<Icon>assignment</Icon>} />
+            <Tab label="Point of Sale" icon={<Icon>store</Icon>} />
+            <Tab label="Rating" icon={<ThumbUp />} />
           </Tabs>
         </AppBar>
         {value === 0 && <TabContainer>Client Information</TabContainer>}
@@ -71,8 +73,7 @@ class ScrollableTabsButtonForce extends React.Component {
         {value === 2 && <TabContainer>Messages</TabContainer>}
         {value === 3 && <TabContainer>Consultation Form</TabContainer>}
         {value === 4 && <TabContainer>Point of Sale</TabContainer>}
-        {/* {value === 5 && <TabContainer>Item Six</TabContainer>}
-        {value === 6 && <TabContainer>Item Seven</TabContainer>} */}
+        {value === 5 && <TabContainer>Rating</TabContainer>} 
       </div>
     );
   }

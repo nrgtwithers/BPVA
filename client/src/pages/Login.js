@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Form from '../components/Form'
 
-class Home extends Component {
+class Login extends Component {
     state = {
             videoURL: 'puppy.mp4'
         }
@@ -16,4 +16,4 @@ class Home extends Component {
             }
         };
         
-export default Home;
+export default Login;
