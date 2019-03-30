@@ -75,7 +75,7 @@ function Form(props) {
           Sign in
         </Typography>
         <form className={classes.form} style={{ background: 'transparent', boxShadow: 'none' }}>
-          <FormControl margin="normal" required fullWidth>
+          <FormControl margin="normal" color="default" required fullWidth>
             <InputLabel htmlFor="email" className={classes.InputLabel}>Email Address</InputLabel>
             <Input id="email" name="email" autoComplete="email" autoFocus />
           </FormControl>

@@ -8,8 +8,8 @@ This project is being create to provide Beauty professionals a more efficient wa
 
 ### Tasks to be completed
 
-- [ ] Figure out Name & Create logos
-- [ ] Figure out overall User Flow
+- [x] Figure out Name & Create logos
+- [x] Figure out overall User Flow
 - [ ] Utilize SEO Marketing
 - [ ] Set up backend for User Auth, client data, and etc
 - [ ] Set up Beauty Professional User page
@@ -27,7 +27,7 @@ This project is being create to provide Beauty professionals a more efficient wa
 - GraphQL
 - Leaflet (For Map Locations)
 - Cloudinary (To download images -- portfolios, beauty professional and client to upload onto their accounts)
-- Java or Python
+- eHopper
 
 #### Framework
 
