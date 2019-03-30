@@ -65,7 +65,7 @@ class ScrollableTabsButtonForce extends React.Component {
             <Tab label="Messages" icon={<Icon>message</Icon>} />
             <Tab label="Consultation Form" icon={<Icon>assignment</Icon>} />
             <Tab label="Point of Sale" icon={<Icon>store</Icon>} />
-            <Tab label="Rating" icon={<ThumbUp />} />
+            <Tab label="Ratings" icon={<ThumbUp />} />
           </Tabs>
         </AppBar>
         {value === 0 && <TabContainer>Client Information</TabContainer>}
@@ -73,7 +73,7 @@ class ScrollableTabsButtonForce extends React.Component {
         {value === 2 && <TabContainer>Messages</TabContainer>}
         {value === 3 && <TabContainer>Consultation Form</TabContainer>}
         {value === 4 && <TabContainer>Point of Sale</TabContainer>}
-        {value === 5 && <TabContainer>Rating</TabContainer>} 
+        {value === 5 && <TabContainer>Ratings</TabContainer>} 
       </div>
     );
   }
