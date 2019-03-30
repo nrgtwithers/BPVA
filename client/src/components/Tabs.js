@@ -13,7 +13,9 @@ import Tab from '@material-ui/core/Tab';
 import ThumbUp from '@material-ui/icons/ThumbUp';
 import Typography from '@material-ui/core/Typography';
 import Icon from '@material-ui/core/Icon';
-
+import ClientTable from '../components/Table';
+import Calendar from '../components/Calendar';
+import Ratings from '../components/Ratings';
 
 function TabContainer(props) {
   return (
@@ -68,12 +70,12 @@ class ScrollableTabsButtonForce extends React.Component {
             <Tab label="Ratings" icon={<ThumbUp />} />
           </Tabs>
         </AppBar>
-        {value === 0 && <TabContainer>Client Information</TabContainer>}
-        {value === 1 && <TabContainer>Calendar</TabContainer>}
+        {value === 0 && <TabContainer><ClientTable /></TabContainer>}
+        {value === 1 && <TabContainer><Calendar /></TabContainer>}
         {value === 2 && <TabContainer>Messages</TabContainer>}
         {value === 3 && <TabContainer>Consultation Form</TabContainer>}
         {value === 4 && <TabContainer>Point of Sale</TabContainer>}
-        {value === 5 && <TabContainer>Ratings</TabContainer>} 
+        {value === 5 && <TabContainer><Ratings /></TabContainer>} 
       </div>
     );
   }

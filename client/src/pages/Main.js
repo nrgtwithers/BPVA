@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Tabs from '../components/Tabs'
 import CenteredGrid from '../components/Grid';
 
-
-
 class Home extends Component {
     state = {
             videoURL: 'puppy.mp4'
