@@ -55,6 +55,10 @@ const styles = theme => ({
     backgroundColor: '#192231',
     marginTop: theme.spacing.unit * 3,
   },
+  InputLabel: {
+    color: 'white',
+    fontFamily: 'Open Sans Condensed',
+}
 });
 
 function Form(props) {
@@ -72,11 +76,11 @@ function Form(props) {
         </Typography>
         <form className={classes.form} style={{ background: 'transparent', boxShadow: 'none' }}>
           <FormControl margin="normal" required fullWidth>
-            <InputLabel htmlFor="email">Email Address</InputLabel>
+            <InputLabel htmlFor="email" className={classes.InputLabel}>Email Address</InputLabel>
             <Input id="email" name="email" autoComplete="email" autoFocus />
           </FormControl>
           <FormControl margin="normal" required fullWidth>
-            <InputLabel htmlFor="password">Password</InputLabel>
+            <InputLabel htmlFor="password" className={classes.InputLabel}>Password</InputLabel>
             <Input name="password" type="password" id="password" autoComplete="current-password" />
           </FormControl>
           {/* <FormControlLabel
@@ -89,7 +93,7 @@ function Form(props) {
             type="submit"
             fullWidth
             variant="contained"
-            color="primary"
+            color="default"
             className={classes.submit}
           >
             Sign in

@@ -47,7 +47,7 @@ a{
   /* font-size: 20px; */
 }
 
-input#name, input#email, input#password{
+input#name, input#email, input#location, input#password{
   color: white;
   border-color:white;
 }

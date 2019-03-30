@@ -34,7 +34,6 @@ const styles = theme => ({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        backgroundColor: '#7b7675 ',
         color: 'white ',
         // opacity: '0.7',
         padding: `${theme.spacing.unit * 2}px ${theme.spacing.unit * 3}px ${theme.spacing.unit * 3}px`,
@@ -57,8 +56,9 @@ const styles = theme => ({
         backgroundColor: '#192231',
         marginTop: theme.spacing.unit * 3,
     },
-    multilineColor: {
-        color: 'white'
+    InputLabel: {
+        color: 'white',
+        fontFamily: 'Open Sans Condensed',
     }
 });
 
@@ -77,27 +77,19 @@ function CreateAccount(props) {
         </Typography>
                 <form className={classes.form} style={{ background: 'transparent', boxShadow: 'none' }}>
                     <FormControl margin="normal" required fullWidth>
-                        <InputLabel htmlFor="name" InputProps={{
-                            classes: {
-                                input: classes.multilineColor
-                            }
-                        }}> Name</InputLabel>
+                        <InputLabel htmlFor="name" className={classes.InputLabel}> Name</InputLabel>
                         <Input id="name" name="name" autoComplete="name" autoFocus />
                     </FormControl>
                     <FormControl margin="normal" required fullWidth>
-                        <InputLabel htmlFor="location" InputProps={{
-                            classes: {
-                                input: classes.multilineColor
-                            }
-                        }}>Location</InputLabel>
+                        <InputLabel htmlFor="location" className={classes.InputLabel}>Location</InputLabel>
                         <Input id="location" name="location" autoComplete="location" autoFocus />
                     </FormControl>
                     <FormControl margin="normal" required fullWidth>
-                        <InputLabel htmlFor="email">Email Address</InputLabel>
+                        <InputLabel htmlFor="email" className={classes.InputLabel}>Email Address</InputLabel>
                         <Input id="email" name="email" autoComplete="email" autoFocus />
                     </FormControl>
                     <FormControl margin="normal" required fullWidth>
-                        <InputLabel htmlFor="password">Password</InputLabel>
+                        <InputLabel htmlFor="password" className={classes.InputLabel}>Password</InputLabel>
                         <Input name="password" type="password" id="password" autoComplete="current-password" />
                     </FormControl>
                     {/* <FormControlLabel
@@ -108,7 +100,7 @@ function CreateAccount(props) {
                         type="submit"
                         fullWidth
                         variant="contained"
-                        color="primary"
+                        color="default"
                         className={classes.submit}
                     >
                         Sign in
